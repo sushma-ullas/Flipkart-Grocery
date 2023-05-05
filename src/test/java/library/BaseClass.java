@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+//Launch Browser and open flipkart website
 public class BaseClass {
 	public static WebDriver driver;
 	public static Logger logger = LogManager.getLogger(BaseClass.class.getName());
