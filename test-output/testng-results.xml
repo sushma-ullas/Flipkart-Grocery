@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30209" started-at="2023-05-08T16:18:21Z" finished-at="2023-05-08T16:18:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30209" started-at="2023-05-08T16:18:21Z" finished-at="2023-05-08T16:18:51Z">
+      <class name="testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.HomePageTest@74e52ef6]" name="setUp" is-config="true" duration-ms="28169" started-at="2023-05-08T21:48:21Z" finished-at="2023-05-08T21:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:testcases.HomePageTest@74e52ef6]" name="verifyHomePageTitleTest" duration-ms="78" started-at="2023-05-08T21:48:49Z" finished-at="2023-05-08T21:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="verifyGroceryOnHomePage()[pri:2, instance:testcases.HomePageTest@74e52ef6]" name="verifyGroceryOnHomePage" duration-ms="306" started-at="2023-05-08T21:48:49Z" finished-at="2023-05-08T21:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGroceryOnHomePage -->
+        <test-method status="PASS" signature="clickOnGroceryTest()[pri:3, instance:testcases.HomePageTest@74e52ef6]" name="clickOnGroceryTest" duration-ms="342" started-at="2023-05-08T21:48:49Z" finished-at="2023-05-08T21:48:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnGroceryTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.HomePageTest@74e52ef6]" name="tearDown" is-config="true" duration-ms="1272" started-at="2023-05-08T21:48:50Z" finished-at="2023-05-08T21:48:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
