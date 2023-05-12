@@ -3,16 +3,19 @@ package library;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -23,7 +26,7 @@ public class BaseClass {
 	public static Properties prop;
 	public static Logger logger = LogManager.getLogger(BaseClass.class.getName());
 
-	public BaseClass() {
+	public static WebDriver initializationDriver() {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
@@ -35,9 +38,6 @@ public class BaseClass {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	public static void initialization() {
 		String browsername = prop.getProperty("browser");
 		if (browsername.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -66,6 +66,34 @@ public class BaseClass {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		return driver;
+	}
+
+	public static void tabHandles() {
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(1));
+		// driver.close();
+		// driver.switchTo().window(tabs.get(0));
+
+	}
+
+	public static void scrollBy() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,650)", "");
+	}
+
+	public static WebDriver getDriver() {
+		if (driver == null) {
+			driver = initializationDriver();
+		}
+		return driver;
+	}
+
+	public static void switchTOParentWindow() {
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.close();
+		driver.switchTo().window(tabs.get(0));
+
 	}
 
 }
