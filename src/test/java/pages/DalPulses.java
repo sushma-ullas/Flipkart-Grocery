@@ -28,7 +28,7 @@ public class DalPulses extends BaseClass {
 	@FindBy(xpath = "//div[contains(text(),'oil')]")
 	WebElement suggestedElement;
 
-	@FindBy(xpath = "//div[@class='_1MbXnE'][normalize-space()='safe harvest Toor/Arhar Dal (Pesticide Free)']")
+	@FindBy(xpath = "//div[@class='_1MbXnE'][contains(text(),'safe harvest Toor')]")
 	WebElement product;
 
 	@FindBy(xpath = "//button[@class='_2KpZ6l _2U9uOA _3v1-ww _27Cjkl']")
@@ -45,6 +45,8 @@ public class DalPulses extends BaseClass {
 
 	@FindBy(xpath = "//span[normalize-space()='Place Order']")
 	WebElement placeOrder;
+	
+	
 
 	@FindBy(xpath = "//div[@class='_2WOk5C']//div[1]//button[1]")
 	WebElement removeProduct;
@@ -102,6 +104,8 @@ public class DalPulses extends BaseClass {
 	public void productPlaceOrder() {
 		placeOrder.click();
 	}
+	
+	
 
 	public void removeProduct() {
 		removeProduct.click();

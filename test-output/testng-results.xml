@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="1" ignored="0" total="21" passed="20">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="190874" started-at="2023-05-12T10:54:57Z" finished-at="2023-05-12T10:58:08Z">
+  <suite name="Suite" duration-ms="192750" started-at="2023-06-03T17:51:07Z" finished-at="2023-06-03T17:54:20Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="46774" started-at="2023-05-12T10:54:57Z" finished-at="2023-05-12T10:55:44Z">
+    <test name="Test" duration-ms="44348" started-at="2023-06-03T17:51:07Z" finished-at="2023-06-03T17:51:52Z">
       <class name="testcases.AHomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.AHomePageTest@62ddbd7e]" name="setUp" is-config="true" duration-ms="14188" started-at="2023-05-12T16:24:57Z" finished-at="2023-05-12T16:25:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.AHomePageTest@62ddbd7e]" name="setUp" is-config="true" duration-ms="11831" started-at="2023-06-03T23:21:07Z" finished-at="2023-06-03T23:21:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:testcases.AHomePageTest@62ddbd7e]" name="verifyHomePageTitleTest" duration-ms="31" started-at="2023-05-12T16:25:11Z" finished-at="2023-05-12T16:25:11Z">
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:testcases.AHomePageTest@62ddbd7e]" name="verifyHomePageTitleTest" duration-ms="31" started-at="2023-06-03T23:21:19Z" finished-at="2023-06-03T23:21:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="verifyGroceryOnHomePage()[pri:2, instance:testcases.AHomePageTest@62ddbd7e]" name="verifyGroceryOnHomePage" duration-ms="94" started-at="2023-05-12T16:25:11Z" finished-at="2023-05-12T16:25:11Z">
+        <test-method status="PASS" signature="verifyGroceryOnHomePage()[pri:3, instance:testcases.AHomePageTest@62ddbd7e]" name="verifyGroceryOnHomePage" duration-ms="90" started-at="2023-06-03T23:21:19Z" finished-at="2023-06-03T23:21:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGroceryOnHomePage -->
-        <test-method status="PASS" signature="clickOnGroceryTest()[pri:3, instance:testcases.AHomePageTest@62ddbd7e]" name="clickOnGroceryTest" duration-ms="153" started-at="2023-05-12T16:25:11Z" finished-at="2023-05-12T16:25:12Z">
+        <test-method status="PASS" signature="clickOnGroceryTest()[pri:4, instance:testcases.AHomePageTest@62ddbd7e]" name="clickOnGroceryTest" duration-ms="102" started-at="2023-06-03T23:21:19Z" finished-at="2023-06-03T23:21:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnGroceryTest -->
-        <test-method status="PASS" signature="enterLocationPinCode()[pri:4, instance:testcases.AHomePageTest@62ddbd7e]" name="enterLocationPinCode" duration-ms="7181" started-at="2023-05-12T16:25:12Z" finished-at="2023-05-12T16:25:19Z">
+        <test-method status="PASS" signature="enterLocationPinCode()[pri:5, instance:testcases.AHomePageTest@62ddbd7e]" name="enterLocationPinCode" duration-ms="7130" started-at="2023-06-03T23:21:19Z" finished-at="2023-06-03T23:21:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterLocationPinCode -->
-        <test-method status="PASS" signature="submitLocation()[pri:5, instance:testcases.AHomePageTest@62ddbd7e]" name="submitLocation" duration-ms="25089" started-at="2023-05-12T16:25:19Z" finished-at="2023-05-12T16:25:44Z">
+        <test-method status="PASS" signature="submitLocation()[pri:6, instance:testcases.AHomePageTest@62ddbd7e]" name="submitLocation" duration-ms="25114" started-at="2023-06-03T23:21:27Z" finished-at="2023-06-03T23:21:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitLocation -->
       </class> <!-- testcases.AHomePageTest -->
     </test> <!-- Test -->
-    <test name="Test1" duration-ms="102431" started-at="2023-05-12T10:55:44Z" finished-at="2023-05-12T10:57:27Z">
+    <test name="Test1" duration-ms="106604" started-at="2023-06-03T17:51:52Z" finished-at="2023-06-03T17:53:38Z">
       <class name="testcases.DalPulsesTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.DalPulsesTest@279fedbd]" name="setUp" is-config="true" duration-ms="33" started-at="2023-05-12T16:25:44Z" finished-at="2023-05-12T16:25:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.DalPulsesTest@279fedbd]" name="setUp" is-config="true" duration-ms="9" started-at="2023-06-03T23:21:52Z" finished-at="2023-06-03T23:21:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchBarElementsTest()[pri:1, instance:testcases.DalPulsesTest@279fedbd]" name="searchBarElementsTest" duration-ms="10166" started-at="2023-05-12T16:25:44Z" finished-at="2023-05-12T16:25:54Z">
+        <test-method status="PASS" signature="searchBarElementsTest()[pri:1, instance:testcases.DalPulsesTest@279fedbd]" name="searchBarElementsTest" duration-ms="10314" started-at="2023-06-03T23:21:52Z" finished-at="2023-06-03T23:22:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBarElementsTest -->
-        <test-method status="PASS" signature="clickOnSearchIconTest()[pri:2, instance:testcases.DalPulsesTest@279fedbd]" name="clickOnSearchIconTest" duration-ms="110" started-at="2023-05-12T16:25:54Z" finished-at="2023-05-12T16:25:54Z">
+        <test-method status="PASS" signature="clickOnSearchIconTest()[pri:2, instance:testcases.DalPulsesTest@279fedbd]" name="clickOnSearchIconTest" duration-ms="94" started-at="2023-06-03T23:22:02Z" finished-at="2023-06-03T23:22:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSearchIconTest -->
-        <test-method status="FAIL" signature="verifySearchElementPageTest()[pri:3, instance:testcases.DalPulsesTest@279fedbd]" name="verifySearchElementPageTest" duration-ms="19" started-at="2023-05-12T16:25:54Z" finished-at="2023-05-12T16:25:54Z">
+        <test-method status="FAIL" signature="verifySearchElementPageTest()[pri:3, instance:testcases.DalPulsesTest@279fedbd]" name="verifySearchElementPageTest" duration-ms="20" started-at="2023-06-03T23:22:02Z" finished-at="2023-06-03T23:22:02Z">
           <exception class="junit.framework.ComparisonFailure">
             <message>
               <![CDATA[expected:<Flipkart Grocery Store - Buy Groceries Online & Get Rs.1 Deals at...> but was:<Toordal- Buy Products Online at Best Price in India - All Categories |...>]]>
@@ -88,63 +88,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchElementPageTest -->
-        <test-method status="PASS" signature="clickableProductTest()[pri:5, instance:testcases.DalPulsesTest@279fedbd]" name="clickableProductTest" duration-ms="10297" started-at="2023-05-12T16:25:55Z" finished-at="2023-05-12T16:26:05Z">
+        <test-method status="PASS" signature="clickableProductTest()[pri:5, instance:testcases.DalPulsesTest@279fedbd]" name="clickableProductTest" duration-ms="10379" started-at="2023-06-03T23:22:02Z" finished-at="2023-06-03T23:22:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickableProductTest -->
-        <test-method status="PASS" signature="navigateToPDPTest()[pri:6, instance:testcases.DalPulsesTest@279fedbd]" name="navigateToPDPTest" duration-ms="3898" started-at="2023-05-12T16:26:05Z" finished-at="2023-05-12T16:26:09Z">
+        <test-method status="PASS" signature="navigateToPDPTest()[pri:6, instance:testcases.DalPulsesTest@279fedbd]" name="navigateToPDPTest" duration-ms="4070" started-at="2023-06-03T23:22:13Z" finished-at="2023-06-03T23:22:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToPDPTest -->
-        <test-method status="PASS" signature="addItemTest()[pri:7, instance:testcases.DalPulsesTest@279fedbd]" name="addItemTest" duration-ms="310" started-at="2023-05-12T16:26:09Z" finished-at="2023-05-12T16:26:09Z">
+        <test-method status="PASS" signature="addItemTest()[pri:7, instance:testcases.DalPulsesTest@279fedbd]" name="addItemTest" duration-ms="311" started-at="2023-06-03T23:22:17Z" finished-at="2023-06-03T23:22:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemTest -->
-        <test-method status="PASS" signature="addQuantityTest()[pri:8, instance:testcases.DalPulsesTest@279fedbd]" name="addQuantityTest" duration-ms="10242" started-at="2023-05-12T16:26:09Z" finished-at="2023-05-12T16:26:19Z">
+        <test-method status="PASS" signature="addQuantityTest()[pri:8, instance:testcases.DalPulsesTest@279fedbd]" name="addQuantityTest" duration-ms="10258" started-at="2023-06-03T23:22:17Z" finished-at="2023-06-03T23:22:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addQuantityTest -->
-        <test-method status="PASS" signature="cart()[pri:9, instance:testcases.DalPulsesTest@279fedbd]" name="cart" duration-ms="125" started-at="2023-05-12T16:26:19Z" finished-at="2023-05-12T16:26:19Z">
+        <test-method status="PASS" signature="cart()[pri:9, instance:testcases.DalPulsesTest@279fedbd]" name="cart" duration-ms="158" started-at="2023-06-03T23:22:27Z" finished-at="2023-06-03T23:22:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cart -->
-        <test-method status="PASS" signature="addQuantity1Test()[pri:10, instance:testcases.DalPulsesTest@279fedbd]" name="addQuantity1Test" duration-ms="20173" started-at="2023-05-12T16:26:19Z" finished-at="2023-05-12T16:26:40Z">
+        <test-method status="PASS" signature="addQuantity1Test()[pri:10, instance:testcases.DalPulsesTest@279fedbd]" name="addQuantity1Test" duration-ms="20408" started-at="2023-06-03T23:22:27Z" finished-at="2023-06-03T23:22:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addQuantity1Test -->
-        <test-method status="PASS" signature="placeOrderTest()[pri:11, instance:testcases.DalPulsesTest@279fedbd]" name="placeOrderTest" duration-ms="16582" started-at="2023-05-12T16:26:40Z" finished-at="2023-05-12T16:26:56Z">
+        <test-method status="PASS" signature="placeOrderTest()[pri:11, instance:testcases.DalPulsesTest@279fedbd]" name="placeOrderTest" duration-ms="19952" started-at="2023-06-03T23:22:48Z" finished-at="2023-06-03T23:23:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrderTest -->
-        <test-method status="PASS" signature="removeProductTest()[pri:12, instance:testcases.DalPulsesTest@279fedbd]" name="removeProductTest" duration-ms="30389" started-at="2023-05-12T16:26:56Z" finished-at="2023-05-12T16:27:27Z">
+        <test-method status="PASS" signature="removeProductTest()[pri:13, instance:testcases.DalPulsesTest@279fedbd]" name="removeProductTest" duration-ms="30567" started-at="2023-06-03T23:23:08Z" finished-at="2023-06-03T23:23:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeProductTest -->
       </class> <!-- testcases.DalPulsesTest -->
     </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="41377" started-at="2023-05-12T10:57:27Z" finished-at="2023-05-12T10:58:08Z">
+    <test name="Test2" duration-ms="41655" started-at="2023-06-03T17:53:38Z" finished-at="2023-06-03T17:54:20Z">
       <class name="testcases.GheeOilsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.GheeOilsTest@6ad82709]" name="setUp" is-config="true" duration-ms="48" started-at="2023-05-12T16:27:27Z" finished-at="2023-05-12T16:27:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.GheeOilsTest@6ad82709]" name="setUp" is-config="true" duration-ms="24" started-at="2023-06-03T23:23:38Z" finished-at="2023-06-03T23:23:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mouseOverTest()[pri:1, instance:testcases.GheeOilsTest@6ad82709]" name="mouseOverTest" duration-ms="648" started-at="2023-05-12T16:27:27Z" finished-at="2023-05-12T16:27:27Z">
+        <test-method status="PASS" signature="mouseOverTest()[pri:1, instance:testcases.GheeOilsTest@6ad82709]" name="mouseOverTest" duration-ms="675" started-at="2023-06-03T23:23:38Z" finished-at="2023-06-03T23:23:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseOverTest -->
-        <test-method status="PASS" signature="popularitySortTest()[pri:2, instance:testcases.GheeOilsTest@6ad82709]" name="popularitySortTest" duration-ms="10170" started-at="2023-05-12T16:27:27Z" finished-at="2023-05-12T16:27:37Z">
+        <test-method status="PASS" signature="popularitySortTest()[pri:2, instance:testcases.GheeOilsTest@6ad82709]" name="popularitySortTest" duration-ms="10251" started-at="2023-06-03T23:23:39Z" finished-at="2023-06-03T23:23:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- popularitySortTest -->
-        <test-method status="PASS" signature="lowToHighSortTest()[pri:3, instance:testcases.GheeOilsTest@6ad82709]" name="lowToHighSortTest" duration-ms="10190" started-at="2023-05-12T16:27:37Z" finished-at="2023-05-12T16:27:48Z">
+        <test-method status="PASS" signature="lowToHighSortTest()[pri:3, instance:testcases.GheeOilsTest@6ad82709]" name="lowToHighSortTest" duration-ms="10261" started-at="2023-06-03T23:23:49Z" finished-at="2023-06-03T23:24:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lowToHighSortTest -->
-        <test-method status="PASS" signature="highToLowSortTest()[pri:4, instance:testcases.GheeOilsTest@6ad82709]" name="highToLowSortTest" duration-ms="10153" started-at="2023-05-12T16:27:48Z" finished-at="2023-05-12T16:27:58Z">
+        <test-method status="PASS" signature="highToLowSortTest()[pri:4, instance:testcases.GheeOilsTest@6ad82709]" name="highToLowSortTest" duration-ms="10202" started-at="2023-06-03T23:24:00Z" finished-at="2023-06-03T23:24:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- highToLowSortTest -->
-        <test-method status="PASS" signature="discountSortTest()[pri:5, instance:testcases.GheeOilsTest@6ad82709]" name="discountSortTest" duration-ms="10153" started-at="2023-05-12T16:27:58Z" finished-at="2023-05-12T16:28:08Z">
+        <test-method status="PASS" signature="discountSortTest()[pri:5, instance:testcases.GheeOilsTest@6ad82709]" name="discountSortTest" duration-ms="10230" started-at="2023-06-03T23:24:10Z" finished-at="2023-06-03T23:24:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- discountSortTest -->

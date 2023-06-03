@@ -32,19 +32,34 @@ public class AHomePageTest extends BaseClass  {
 				"Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!");
 	}
 
-	@Test(priority = 2)
+//	@Test(priority=2)
+//	public void loginTest(){
+//		homePage.login();
+//		homePage.sendMobile();
+//		homePage.requestOtp();
+//		
+//		try {
+//			Thread.sleep(10000);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		homePage.submitLogin();
+//		driver.navigate().back();
+//		
+//	}
+	@Test(priority = 3)
 	public void verifyGroceryOnHomePage() {
 
 		Assert.assertTrue(homePage.verifyGroceryOnHomePage());
 	}
 	
-	@Test(priority=3)
+	@Test(priority=4)
 	public void clickOnGroceryTest(){
 		homePage.clickonGrocery();
 	}
 	
 	
-	@Test(priority=4)
+	@Test(priority=5)
 	public void enterLocationPinCode(){
 		try {
 			Thread.sleep(7000);	
@@ -55,7 +70,7 @@ public class AHomePageTest extends BaseClass  {
 		homePage.sendPinCode();
 	}
 	
-	@Test(priority=5)
+	@Test(priority=6)
 	public void submitLocation(){
 		try {
 			Thread.sleep(5000);	

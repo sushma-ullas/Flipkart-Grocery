@@ -135,10 +135,14 @@ public class DalPulsesTest extends BaseClass {
 		
 		dalpulses.productPlaceOrder();
 		driver.navigate().back();
+		
 	}
 	
-	@Test(priority=12)
+	
+	
+	@Test(priority=13)
 	public void removeProductTest(){
+		
 		try {
 			Thread.sleep(10000);
 		} catch (Exception e) {
@@ -162,3 +166,4 @@ public class DalPulsesTest extends BaseClass {
 	}
 
 }
+

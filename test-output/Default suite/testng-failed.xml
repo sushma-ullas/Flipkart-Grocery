@@ -3,18 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.DalPulsesTest">
+      <class name="testcases.AHomePageTest">
         <methods>
-          <include name="clickableProductTest"/>
-          <include name="navigateToPDPTest"/>
-          <include name="verifySearchElementPageTest"/>
-          <include name="addItemTest"/>
-          <include name="addQuantity1Test"/>
-          <include name="addQuantityTest"/>
-          <include name="searchAutoSuggestedElement"/>
+          <include name="clickOnGroceryTest"/>
+          <include name="enterLocationPinCode"/>
+          <include name="loginTest"/>
           <include name="setUp"/>
+          <include name="submitLocation"/>
         </methods>
-      </class> <!-- testcases.DalPulsesTest -->
+      </class> <!-- testcases.AHomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

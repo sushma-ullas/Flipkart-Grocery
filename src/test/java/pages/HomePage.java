@@ -49,6 +49,25 @@ public class HomePage {
 	@FindBy(xpath="//span[normalize-space()='Cart']")
 	WebElement cart;
 	
+	@FindBy(xpath = "//*[contains(text(), 'Login')]")
+	WebElement login;
+	
+	@FindBy(xpath = "//input[@class='_2IX_2- VJZDxU']")
+	WebElement sendMobile;
+	
+//	@FindBy(xpath = "//button[@type='submit']")
+//	WebElement loginContinue;
+	
+	@FindBy(xpath = "//button[@class='_2KpZ6l _2HKlqd _3AWRsL']")
+	WebElement requestOtp;
+	
+	
+	@FindBy(xpath = "//input[@class='_2IX_2- _3mctLh _17N0em']")
+	WebElement otp;
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement submitLogin;
+	
 	public void cart(){
 		cart.click();
 	}
@@ -127,4 +146,32 @@ public class HomePage {
 	public void submitLocation(){
 		LocationSubmit.submit();
 	}
+	
+	public void login(){
+		login.click();
+		
+	}
+	public void sendMobile(){
+		sendMobile.sendKeys("9448776300");
+		
+	}
+	
+	public void requestOtp(){
+		requestOtp.click();
+		
+	}
+	
+	
+//	public void loginContinue(){
+//		loginContinue.click();
+//	}
+	
+	public void otp(){
+		
+	}
+	
+	public void submitLogin(){
+		submitLogin.click();
+	}
+	
 }
