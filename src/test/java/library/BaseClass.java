@@ -1,15 +1,19 @@
 package library;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -60,7 +64,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
 
-		new Actions(driver).keyDown(Keys.ESCAPE).sendKeys("a").perform();
+		new Actions(driver).keyDown(Keys.ESCAPE).perform();
 		try {
 			Thread.sleep(2000);
 		} catch (Exception e) {
@@ -95,5 +99,16 @@ public class BaseClass {
 		driver.switchTo().window(tabs.get(0));
 
 	}
+	
+	public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
+		//Convert web driver object to TakeScreenshot
+		TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+		//Call getScreenshotAs method to create image file
+		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+		//Move image file to new destination
+		File DestFile=new File(fileWithPath);
+		//Copy file at destination
+		FileUtils.copyFile(SrcFile, DestFile);
+		}
 
 }

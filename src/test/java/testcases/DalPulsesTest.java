@@ -1,11 +1,13 @@
 package testcases;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import junit.framework.Assert;
 import library.BaseClass;
 import pages.DalPulses;
 
@@ -25,11 +27,7 @@ public class DalPulsesTest extends BaseClass {
 
 	@Test(priority = 1)
 	public void searchBarElementsTest() {
-		try {
-			Thread.sleep(10000);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 		String result = dalpulses.searchBarElements();
 		System.out.println("Result " + result);
 
@@ -42,41 +40,40 @@ public class DalPulsesTest extends BaseClass {
 	}
 
 	@Test(priority = 3)
-	public void verifySearchElementPageTest() {
+	public void verifySearchElementPageTest() throws Exception {
 		String searchElementTitle = dalpulses.verifySearchElementPage();
 		Assert.assertEquals(searchElementTitle,
 				"Toordal- Buy Products Online at Best Price in India - All Categories | Flipkart.com");
+		takeSnapShot(driver,
+				System.getProperty("user.dir") +  "/screenShots/search.png");
 	}
 
-	//@Test(priority = 4)
-	//public void searchAutoSuggestedElement() {
-		//try {
-			//Thread.sleep(10000);
-		//} catch (Exception e) {
-			//e.printStackTrace();
-		//}
+	// @Test(priority = 4)
+	// public void searchAutoSuggestedElement() {
+	// try {
+	// Thread.sleep(10000);
+	// } catch (Exception e) {
+	// e.printStackTrace();
+	// }
 
-		//dalpulses.selectAutoDropDowmElement();
-	//}
+	// dalpulses.selectAutoDropDowmElement();
+	// }
 
 	@Test(priority = 5)
 	public void clickableProductTest() {
-		try {
-			Thread.sleep(10000);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		dalpulses.clickableProduct();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
+        dalpulses.clickableProduct();
 		tabHandles();
 	}
 
 	@Test(priority = 6)
-	public void navigateToPDPTest() {
+	public void navigateToPDPTest() throws Exception {
 		String productPageTitle = dalpulses.navigateToPDP();
 		System.out.println(productPageTitle);
 		Assert.assertEquals(productPageTitle,
-				"safe harvest Toor/Arhar Dal (Pesticide Free) Price in India - Buy safe harvest Toor/Arhar Dal (Pesticide Free) online at Flipkart.com");
+				"Dehaat Honest Farms Toor/Arhar Dal (Split) Price in India - Buy Dehaat Honest Farms Toor/Arhar Dal (Split) online at Flipkart.com:");
+		takeSnapShot(driver,
+				System.getProperty("user.dir") +  "/screenShots/product.png");
 	}
 
 	@Test(priority = 7)
@@ -85,7 +82,6 @@ public class DalPulsesTest extends BaseClass {
 		scrollBy();
 		scrollBy();
 		scrollBy();
-		
 
 		dalpulses.addItem();
 	}
@@ -97,6 +93,7 @@ public class DalPulsesTest extends BaseClass {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 		dalpulses.addQuantity();
 		dalpulses.addQuantity();
 
@@ -105,8 +102,9 @@ public class DalPulsesTest extends BaseClass {
 	@Test(priority = 9)
 	public void cart() {
 		dalpulses.cart();
+
 	}
-	
+
 	@Test(priority = 10)
 	public void addQuantity1Test() {
 		try {
@@ -114,49 +112,93 @@ public class DalPulsesTest extends BaseClass {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 		dalpulses.addQuantity1();
 		try {
 			Thread.sleep(10000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 		dalpulses.addQuantity1();
-		
 
 	}
-	
-	@Test(priority=11)
-	public void placeOrderTest(){
+
+	@Test(priority = 11)
+	public void placeOrderTest() throws Exception {
 		try {
 			Thread.sleep(10000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
+		takeSnapShot(driver,
+				System.getProperty("user.dir") +  "/screenShots/cart.png");
+
 		dalpulses.productPlaceOrder();
+
 		driver.navigate().back();
 	}
-	
-	@Test(priority=12)
-	public void removeProductTest(){
+
+	// @Test(priority=12)
+	// public void emailTest() {
+	// dalpulses.emailLogin();
+
+	// }
+
+	// @Test(priority=13)
+	// public void loginPromptTest() {
+
+	// try {
+	// Thread.sleep(1000);
+	// dalpulses.loginPrompt();
+	// } catch (Exception e) {
+	// e.printStackTrace();
+	// }
+	// }
+	// @Test(priority=14)
+	// public void loginSubmitTest() {
+
+	// try {
+	// Thread.sleep(30000);
+	// dalpulses.loginSubmit();
+	// } catch (Exception e) {
+	// e.printStackTrace();
+	// }
+	// }
+
+	@Test(priority = 14)
+	public void removeProductTest() throws Exception {
 		try {
 			Thread.sleep(10000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 		dalpulses.removeProduct();
 		try {
 			Thread.sleep(10000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 		dalpulses.removeProduct();
 		try {
 			Thread.sleep(10000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 		dalpulses.removeProduct();
+		try {
+			Thread.sleep(10000);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		takeSnapShot(driver,
+				System.getProperty("user.dir") +  "/screenShots/emptybasket.png");
+
 		driver.navigate().back();
 		switchTOParentWindow();
 	}

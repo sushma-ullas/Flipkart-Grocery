@@ -33,6 +33,8 @@ public class GheeOils extends BaseClass {
 
 	@FindBy(xpath = "//div[@class='_10UF8M'][normalize-space()='Discount']")
 	WebElement discount;
+	
+	
 
 	public void mouseOver() {
 		Actions action = new Actions(driver);
@@ -53,5 +55,6 @@ public class GheeOils extends BaseClass {
 	public void discountSort(){
 		discount.click();
 	}
+	
 
 }

@@ -1,154 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="21" passed="20">
+<testng-results ignored="0" total="26" passed="24" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="190874" started-at="2023-05-12T10:54:57Z" finished-at="2023-05-12T10:58:08Z">
+  <suite started-at="2023-06-30T17:51:35 IST" name="Suite" finished-at="2023-06-30T17:54:40 IST" duration-ms="184537">
     <groups>
     </groups>
-    <test name="Test" duration-ms="46774" started-at="2023-05-12T10:54:57Z" finished-at="2023-05-12T10:55:44Z">
-      <class name="testcases.AHomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.AHomePageTest@62ddbd7e]" name="setUp" is-config="true" duration-ms="14188" started-at="2023-05-12T16:24:57Z" finished-at="2023-05-12T16:25:11Z">
+    <test started-at="2023-06-30T17:51:35 IST" name="Test" finished-at="2023-06-30T17:54:40 IST" duration-ms="184537">
+      <class name="testcases.AttaTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AttaTest@25e2a451]" started-at="2023-06-30T17:54:25 IST" name="setUp" finished-at="2023-06-30T17:54:25 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:testcases.AHomePageTest@62ddbd7e]" name="verifyHomePageTitleTest" duration-ms="31" started-at="2023-05-12T16:25:11Z" finished-at="2023-05-12T16:25:11Z">
+        <test-method signature="filterBrandTest()[pri:1, instance:testcases.AttaTest@25e2a451]" started-at="2023-06-30T17:54:25 IST" name="filterBrandTest" finished-at="2023-06-30T17:54:36 IST" duration-ms="10731" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="verifyGroceryOnHomePage()[pri:2, instance:testcases.AHomePageTest@62ddbd7e]" name="verifyGroceryOnHomePage" duration-ms="94" started-at="2023-05-12T16:25:11Z" finished-at="2023-05-12T16:25:11Z">
+        </test-method> <!-- filterBrandTest -->
+        <test-method signature="availabilityTest()[pri:2, instance:testcases.AttaTest@25e2a451]" started-at="2023-06-30T17:54:36 IST" name="availabilityTest" finished-at="2023-06-30T17:54:37 IST" duration-ms="1001" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyGroceryOnHomePage -->
-        <test-method status="PASS" signature="clickOnGroceryTest()[pri:3, instance:testcases.AHomePageTest@62ddbd7e]" name="clickOnGroceryTest" duration-ms="153" started-at="2023-05-12T16:25:11Z" finished-at="2023-05-12T16:25:12Z">
+        </test-method> <!-- availabilityTest -->
+        <test-method signature="backToGroceryTest()[pri:3, instance:testcases.AttaTest@25e2a451]" started-at="2023-06-30T17:54:37 IST" name="backToGroceryTest" finished-at="2023-06-30T17:54:40 IST" duration-ms="2709" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnGroceryTest -->
-        <test-method status="PASS" signature="enterLocationPinCode()[pri:4, instance:testcases.AHomePageTest@62ddbd7e]" name="enterLocationPinCode" duration-ms="7181" started-at="2023-05-12T16:25:12Z" finished-at="2023-05-12T16:25:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterLocationPinCode -->
-        <test-method status="PASS" signature="submitLocation()[pri:5, instance:testcases.AHomePageTest@62ddbd7e]" name="submitLocation" duration-ms="25089" started-at="2023-05-12T16:25:19Z" finished-at="2023-05-12T16:25:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitLocation -->
-      </class> <!-- testcases.AHomePageTest -->
-    </test> <!-- Test -->
-    <test name="Test1" duration-ms="102431" started-at="2023-05-12T10:55:44Z" finished-at="2023-05-12T10:57:27Z">
+        </test-method> <!-- backToGroceryTest -->
+      </class> <!-- testcases.AttaTest -->
       <class name="testcases.DalPulsesTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.DalPulsesTest@279fedbd]" name="setUp" is-config="true" duration-ms="33" started-at="2023-05-12T16:25:44Z" finished-at="2023-05-12T16:25:44Z">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:12 IST" name="setUp" finished-at="2023-06-30T17:52:12 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchBarElementsTest()[pri:1, instance:testcases.DalPulsesTest@279fedbd]" name="searchBarElementsTest" duration-ms="10166" started-at="2023-05-12T16:25:44Z" finished-at="2023-05-12T16:25:54Z">
+        <test-method signature="searchBarElementsTest()[pri:1, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:12 IST" name="searchBarElementsTest" finished-at="2023-06-30T17:52:12 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBarElementsTest -->
-        <test-method status="PASS" signature="clickOnSearchIconTest()[pri:2, instance:testcases.DalPulsesTest@279fedbd]" name="clickOnSearchIconTest" duration-ms="110" started-at="2023-05-12T16:25:54Z" finished-at="2023-05-12T16:25:54Z">
+        <test-method signature="clickOnSearchIconTest()[pri:2, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:12 IST" name="clickOnSearchIconTest" finished-at="2023-06-30T17:52:13 IST" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSearchIconTest -->
-        <test-method status="FAIL" signature="verifySearchElementPageTest()[pri:3, instance:testcases.DalPulsesTest@279fedbd]" name="verifySearchElementPageTest" duration-ms="19" started-at="2023-05-12T16:25:54Z" finished-at="2023-05-12T16:25:54Z">
-          <exception class="junit.framework.ComparisonFailure">
+        <test-method signature="verifySearchElementPageTest()[pri:3, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:13 IST" name="verifySearchElementPageTest" finished-at="2023-06-30T17:52:13 IST" duration-ms="17" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected:<Flipkart Grocery Store - Buy Groceries Online & Get Rs.1 Deals at...> but was:<Toordal- Buy Products Online at Best Price in India - All Categories |...>]]>
+              <![CDATA[expected [Toordal- Buy Products Online at Best Price in India - All Categories | Flipkart.com] but found [Flipkart Grocery Store - Buy Groceries Online & Get Rs.1 Deals at Flipkart.com]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.ComparisonFailure: expected:<Flipkart Grocery Store - Buy Groceries Online & Get Rs.1 Deals at...> but was:<Toordal- Buy Products Online at Best Price in India - All Categories |...>
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at testcases.DalPulsesTest.verifySearchElementPageTest(DalPulsesTest.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+              <![CDATA[java.lang.AssertionError: expected [Toordal- Buy Products Online at Best Price in India - All Categories | Flipkart.com] but found [Flipkart Grocery Store - Buy Groceries Online & Get Rs.1 Deals at Flipkart.com]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at testcases.DalPulsesTest.verifySearchElementPageTest(DalPulsesTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- junit.framework.ComparisonFailure -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchElementPageTest -->
-        <test-method status="PASS" signature="clickableProductTest()[pri:5, instance:testcases.DalPulsesTest@279fedbd]" name="clickableProductTest" duration-ms="10297" started-at="2023-05-12T16:25:55Z" finished-at="2023-05-12T16:26:05Z">
+        <test-method signature="clickableProductTest()[pri:5, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:13 IST" name="clickableProductTest" finished-at="2023-06-30T17:52:14 IST" duration-ms="1228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickableProductTest -->
-        <test-method status="PASS" signature="navigateToPDPTest()[pri:6, instance:testcases.DalPulsesTest@279fedbd]" name="navigateToPDPTest" duration-ms="3898" started-at="2023-05-12T16:26:05Z" finished-at="2023-05-12T16:26:09Z">
+        <test-method signature="navigateToPDPTest()[pri:6, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:14 IST" name="navigateToPDPTest" finished-at="2023-06-30T17:52:16 IST" duration-ms="2494" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Dehaat Honest Farms Toor/Arhar Dal (Split) Price in India - Buy Dehaat Honest Farms Toor/Arhar Dal (Split) online at Flipkart.com:] but found [Dehaat Honest Farms Toor/Arhar Dal (Split) Price in India - Buy Dehaat Honest Farms Toor/Arhar Dal (Split) online at Flipkart.com]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Dehaat Honest Farms Toor/Arhar Dal (Split) Price in India - Buy Dehaat Honest Farms Toor/Arhar Dal (Split) online at Flipkart.com:] but found [Dehaat Honest Farms Toor/Arhar Dal (Split) Price in India - Buy Dehaat Honest Farms Toor/Arhar Dal (Split) online at Flipkart.com]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at testcases.DalPulsesTest.navigateToPDPTest(DalPulsesTest.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToPDPTest -->
-        <test-method status="PASS" signature="addItemTest()[pri:7, instance:testcases.DalPulsesTest@279fedbd]" name="addItemTest" duration-ms="310" started-at="2023-05-12T16:26:09Z" finished-at="2023-05-12T16:26:09Z">
+        <test-method signature="addItemTest()[pri:7, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:16 IST" name="addItemTest" finished-at="2023-06-30T17:52:17 IST" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemTest -->
-        <test-method status="PASS" signature="addQuantityTest()[pri:8, instance:testcases.DalPulsesTest@279fedbd]" name="addQuantityTest" duration-ms="10242" started-at="2023-05-12T16:26:09Z" finished-at="2023-05-12T16:26:19Z">
+        <test-method signature="addQuantityTest()[pri:8, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:17 IST" name="addQuantityTest" finished-at="2023-06-30T17:52:27 IST" duration-ms="10251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addQuantityTest -->
-        <test-method status="PASS" signature="cart()[pri:9, instance:testcases.DalPulsesTest@279fedbd]" name="cart" duration-ms="125" started-at="2023-05-12T16:26:19Z" finished-at="2023-05-12T16:26:19Z">
+        <test-method signature="cart()[pri:9, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:27 IST" name="cart" finished-at="2023-06-30T17:52:27 IST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cart -->
-        <test-method status="PASS" signature="addQuantity1Test()[pri:10, instance:testcases.DalPulsesTest@279fedbd]" name="addQuantity1Test" duration-ms="20173" started-at="2023-05-12T16:26:19Z" finished-at="2023-05-12T16:26:40Z">
+        <test-method signature="addQuantity1Test()[pri:10, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:27 IST" name="addQuantity1Test" finished-at="2023-06-30T17:52:47 IST" duration-ms="20251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addQuantity1Test -->
-        <test-method status="PASS" signature="placeOrderTest()[pri:11, instance:testcases.DalPulsesTest@279fedbd]" name="placeOrderTest" duration-ms="16582" started-at="2023-05-12T16:26:40Z" finished-at="2023-05-12T16:26:56Z">
+        <test-method signature="placeOrderTest()[pri:11, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:52:47 IST" name="placeOrderTest" finished-at="2023-06-30T17:53:01 IST" duration-ms="14067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrderTest -->
-        <test-method status="PASS" signature="removeProductTest()[pri:12, instance:testcases.DalPulsesTest@279fedbd]" name="removeProductTest" duration-ms="30389" started-at="2023-05-12T16:26:56Z" finished-at="2023-05-12T16:27:27Z">
+        <test-method signature="removeProductTest()[pri:14, instance:testcases.DalPulsesTest@788fcafb]" started-at="2023-06-30T17:53:01 IST" name="removeProductTest" finished-at="2023-06-30T17:53:42 IST" duration-ms="40897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeProductTest -->
       </class> <!-- testcases.DalPulsesTest -->
-    </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="41377" started-at="2023-05-12T10:57:27Z" finished-at="2023-05-12T10:58:08Z">
-      <class name="testcases.GheeOilsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.GheeOilsTest@6ad82709]" name="setUp" is-config="true" duration-ms="48" started-at="2023-05-12T16:27:27Z" finished-at="2023-05-12T16:27:27Z">
+      <class name="testcases.GroceryHomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.GroceryHomePageTest@65b3a85a]" started-at="2023-06-30T17:51:35 IST" name="setUp" finished-at="2023-06-30T17:51:46 IST" duration-ms="10759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mouseOverTest()[pri:1, instance:testcases.GheeOilsTest@6ad82709]" name="mouseOverTest" duration-ms="648" started-at="2023-05-12T16:27:27Z" finished-at="2023-05-12T16:27:27Z">
+        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:testcases.GroceryHomePageTest@65b3a85a]" started-at="2023-06-30T17:51:46 IST" name="verifyHomePageTitleTest" finished-at="2023-06-30T17:51:46 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method signature="verifyGroceryOnHomePage()[pri:2, instance:testcases.GroceryHomePageTest@65b3a85a]" started-at="2023-06-30T17:51:46 IST" name="verifyGroceryOnHomePage" finished-at="2023-06-30T17:51:46 IST" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGroceryOnHomePage -->
+        <test-method signature="clickOnGroceryTest()[pri:3, instance:testcases.GroceryHomePageTest@65b3a85a]" started-at="2023-06-30T17:51:46 IST" name="clickOnGroceryTest" finished-at="2023-06-30T17:51:50 IST" duration-ms="3282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnGroceryTest -->
+        <test-method signature="enterLocationPinCode()[pri:4, instance:testcases.GroceryHomePageTest@65b3a85a]" started-at="2023-06-30T17:51:50 IST" name="enterLocationPinCode" finished-at="2023-06-30T17:51:50 IST" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterLocationPinCode -->
+        <test-method signature="submitLocation()[pri:5, instance:testcases.GroceryHomePageTest@65b3a85a]" started-at="2023-06-30T17:51:50 IST" name="submitLocation" finished-at="2023-06-30T17:51:50 IST" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitLocation -->
+        <test-method signature="loginTest()[pri:6, instance:testcases.GroceryHomePageTest@65b3a85a]" started-at="2023-06-30T17:51:50 IST" name="loginTest" finished-at="2023-06-30T17:52:05 IST" duration-ms="14494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="closeTest()[pri:7, instance:testcases.GroceryHomePageTest@65b3a85a]" started-at="2023-06-30T17:52:05 IST" name="closeTest" finished-at="2023-06-30T17:52:12 IST" duration-ms="7598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTest -->
+      </class> <!-- testcases.GroceryHomePageTest -->
+      <class name="testcases.GheeOilsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.GheeOilsTest@4febb875]" started-at="2023-06-30T17:53:42 IST" name="setUp" finished-at="2023-06-30T17:53:42 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="mouseOverTest()[pri:1, instance:testcases.GheeOilsTest@4febb875]" started-at="2023-06-30T17:53:42 IST" name="mouseOverTest" finished-at="2023-06-30T17:53:43 IST" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseOverTest -->
-        <test-method status="PASS" signature="popularitySortTest()[pri:2, instance:testcases.GheeOilsTest@6ad82709]" name="popularitySortTest" duration-ms="10170" started-at="2023-05-12T16:27:27Z" finished-at="2023-05-12T16:27:37Z">
+        <test-method signature="popularitySortTest()[pri:2, instance:testcases.GheeOilsTest@4febb875]" started-at="2023-06-30T17:53:43 IST" name="popularitySortTest" finished-at="2023-06-30T17:53:48 IST" duration-ms="5523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- popularitySortTest -->
-        <test-method status="PASS" signature="lowToHighSortTest()[pri:3, instance:testcases.GheeOilsTest@6ad82709]" name="lowToHighSortTest" duration-ms="10190" started-at="2023-05-12T16:27:37Z" finished-at="2023-05-12T16:27:48Z">
+        <test-method signature="lowToHighSortTest()[pri:3, instance:testcases.GheeOilsTest@4febb875]" started-at="2023-06-30T17:53:48 IST" name="lowToHighSortTest" finished-at="2023-06-30T17:53:59 IST" duration-ms="10898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lowToHighSortTest -->
-        <test-method status="PASS" signature="highToLowSortTest()[pri:4, instance:testcases.GheeOilsTest@6ad82709]" name="highToLowSortTest" duration-ms="10153" started-at="2023-05-12T16:27:48Z" finished-at="2023-05-12T16:27:58Z">
+        <test-method signature="highToLowSortTest()[pri:4, instance:testcases.GheeOilsTest@4febb875]" started-at="2023-06-30T17:53:59 IST" name="highToLowSortTest" finished-at="2023-06-30T17:54:10 IST" duration-ms="10550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- highToLowSortTest -->
-        <test-method status="PASS" signature="discountSortTest()[pri:5, instance:testcases.GheeOilsTest@6ad82709]" name="discountSortTest" duration-ms="10153" started-at="2023-05-12T16:27:58Z" finished-at="2023-05-12T16:28:08Z">
+        <test-method signature="discountSortTest()[pri:5, instance:testcases.GheeOilsTest@4febb875]" started-at="2023-06-30T17:54:10 IST" name="discountSortTest" finished-at="2023-06-30T17:54:25 IST" duration-ms="15455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- discountSortTest -->
       </class> <!-- testcases.GheeOilsTest -->
-    </test> <!-- Test2 -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

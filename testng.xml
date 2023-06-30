@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="none">
-  <test name="Test" preserve-order="true">
-    <classes >
-      <class name="testcases.AHomePageTest">
-      </class>
-    </classes>
-  </test> <!-- Test -->
-
-  <test name="Test1" preserve-order="true">
-    <classes >
-      <class name="testcases.DalPulsesTest">
-      </class>
-    </classes>
-  </test> <!-- Test -->
-
-
- <test name="Test2" preserve-order="true">
-    <classes >
-      <class name="testcases.GheeOilsTest">
-      </class>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testcases.GroceryHomePageTest"/>
+      <class name="testcases.DalPulsesTest"/>
+      <class name="testcases.GheeOilsTest"/>
+      <class name="testcases.AttaTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

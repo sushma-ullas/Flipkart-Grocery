@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,21 +24,22 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
               <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Ullas\Documents\AutomationPOC\groceries\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Flipkart-Groceries\Flipkart-Grocery\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">3 tests</span>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
+                    <span class="method-stats">26 methods, 2 failed,   24 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,8 +103,13 @@
                     </span>
                     <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="verifySearchElementPageTest">verifySearchElementPageTest</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="navigateToPDPTest">navigateToPDPTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="verifySearchElementPageTest">verifySearchElementPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -115,103 +122,123 @@
                     </span>
                     <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="addItemTest">addItemTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="addItemTest">addItemTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="addQuantity1Test">addQuantity1Test</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="addQuantity1Test">addQuantity1Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="addQuantityTest">addQuantityTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="addQuantityTest">addQuantityTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="cart">cart</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AttaTest" class="method navigator-link" hash-for-method="availabilityTest">availabilityTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AHomePageTest" hash-for-method="clickOnGroceryTest">clickOnGroceryTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AttaTest" class="method navigator-link" hash-for-method="backToGroceryTest">backToGroceryTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="clickOnSearchIconTest">clickOnSearchIconTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="cart">cart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="clickableProductTest">clickableProductTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GroceryHomePageTest" class="method navigator-link" hash-for-method="clickOnGroceryTest">clickOnGroceryTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.GheeOilsTest" hash-for-method="discountSortTest">discountSortTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="clickOnSearchIconTest">clickOnSearchIconTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AHomePageTest" hash-for-method="enterLocationPinCode">enterLocationPinCode</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="clickableProductTest">clickableProductTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.GheeOilsTest" hash-for-method="highToLowSortTest">highToLowSortTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GroceryHomePageTest" class="method navigator-link" hash-for-method="closeTest">closeTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.GheeOilsTest" hash-for-method="lowToHighSortTest">lowToHighSortTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GheeOilsTest" class="method navigator-link" hash-for-method="discountSortTest">discountSortTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.GheeOilsTest" hash-for-method="mouseOverTest">mouseOverTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GroceryHomePageTest" class="method navigator-link" hash-for-method="enterLocationPinCode">enterLocationPinCode</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="navigateToPDPTest">navigateToPDPTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AttaTest" class="method navigator-link" hash-for-method="filterBrandTest">filterBrandTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="placeOrderTest">placeOrderTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GheeOilsTest" class="method navigator-link" hash-for-method="highToLowSortTest">highToLowSortTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.GheeOilsTest" hash-for-method="popularitySortTest">popularitySortTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GroceryHomePageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="removeProductTest">removeProductTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GheeOilsTest" class="method navigator-link" hash-for-method="lowToHighSortTest">lowToHighSortTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DalPulsesTest" hash-for-method="searchBarElementsTest">searchBarElementsTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GheeOilsTest" class="method navigator-link" hash-for-method="mouseOverTest">mouseOverTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AHomePageTest" hash-for-method="submitLocation">submitLocation</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="placeOrderTest">placeOrderTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AHomePageTest" hash-for-method="verifyGroceryOnHomePage">verifyGroceryOnHomePage</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GheeOilsTest" class="method navigator-link" hash-for-method="popularitySortTest">popularitySortTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.AHomePageTest" hash-for-method="verifyHomePageTitleTest">verifyHomePageTitleTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="removeProductTest">removeProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DalPulsesTest" class="method navigator-link" hash-for-method="searchBarElementsTest">searchBarElementsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GroceryHomePageTest" class="method navigator-link" hash-for-method="submitLocation">submitLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GroceryHomePageTest" class="method navigator-link" hash-for-method="verifyGroceryOnHomePage">verifyGroceryOnHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.GroceryHomePageTest" class="method navigator-link" hash-for-method="verifyHomePageTitleTest">verifyHomePageTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -234,19 +261,130 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="navigateToPDPTest">
+                  </a> <!-- navigateToPDPTest -->
+                  <span class="method-name">navigateToPDPTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Dehaat Honest Farms Toor/Arhar Dal (Split) Price in India - Buy Dehaat Honest Farms Toor/Arhar Dal (Split) online at Flipkart.com:] but found [Dehaat Honest Farms Toor/Arhar Dal (Split) Price in India - Buy Dehaat Honest Farms Toor/Arhar Dal (Split) online at Flipkart.com]
+	at testcases.DalPulsesTest.navigateToPDPTest(DalPulsesTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifySearchElementPageTest">
                   </a> <!-- verifySearchElementPageTest -->
                   <span class="method-name">verifySearchElementPageTest</span>
-                  <div class="stack-trace">junit.framework.ComparisonFailure: expected:&lt;Flipkart Grocery Store - Buy Groceries Online &amp; Get Rs.1 Deals at...&gt; but was:&lt;Toordal- Buy Products Online at Best Price in India - All Categories |...&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at testcases.DalPulsesTest.verifySearchElementPageTest(DalPulsesTest.java:47)
-... Removed 25 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: expected [Toordal- Buy Products Online at Best Price in India - All Categories | Flipkart.com] but found [Flipkart Grocery Store - Buy Groceries Online &amp; Get Rs.1 Deals at Flipkart.com]
+	at testcases.DalPulsesTest.verifySearchElementPageTest(DalPulsesTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.GheeOilsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="discountSortTest">
+                  </a> <!-- discountSortTest -->
+                  <span class="method-name">discountSortTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="highToLowSortTest">
+                  </a> <!-- highToLowSortTest -->
+                  <span class="method-name">highToLowSortTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lowToHighSortTest">
+                  </a> <!-- lowToHighSortTest -->
+                  <span class="method-name">lowToHighSortTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouseOverTest">
+                  </a> <!-- mouseOverTest -->
+                  <span class="method-name">mouseOverTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="popularitySortTest">
+                  </a> <!-- popularitySortTest -->
+                  <span class="method-name">popularitySortTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.GroceryHomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnGroceryTest">
+                  </a> <!-- clickOnGroceryTest -->
+                  <span class="method-name">clickOnGroceryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeTest">
+                  </a> <!-- closeTest -->
+                  <span class="method-name">closeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterLocationPinCode">
+                  </a> <!-- enterLocationPinCode -->
+                  <span class="method-name">enterLocationPinCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitLocation">
+                  </a> <!-- submitLocation -->
+                  <span class="method-name">submitLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGroceryOnHomePage">
+                  </a> <!-- verifyGroceryOnHomePage -->
+                  <span class="method-name">verifyGroceryOnHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitleTest">
+                  </a> <!-- verifyHomePageTitleTest -->
+                  <span class="method-name">verifyHomePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -297,13 +435,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="navigateToPDPTest">
-                  </a> <!-- navigateToPDPTest -->
-                  <span class="method-name">navigateToPDPTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="placeOrderTest">
                   </a> <!-- placeOrderTest -->
                   <span class="method-name">placeOrderTest</span>
@@ -328,85 +459,28 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.AHomePageTest</span>
+              <span class="class-name">testcases.AttaTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickOnGroceryTest">
-                  </a> <!-- clickOnGroceryTest -->
-                  <span class="method-name">clickOnGroceryTest</span>
+                  <a name="availabilityTest">
+                  </a> <!-- availabilityTest -->
+                  <span class="method-name">availabilityTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="enterLocationPinCode">
-                  </a> <!-- enterLocationPinCode -->
-                  <span class="method-name">enterLocationPinCode</span>
+                  <a name="backToGroceryTest">
+                  </a> <!-- backToGroceryTest -->
+                  <span class="method-name">backToGroceryTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="submitLocation">
-                  </a> <!-- submitLocation -->
-                  <span class="method-name">submitLocation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyGroceryOnHomePage">
-                  </a> <!-- verifyGroceryOnHomePage -->
-                  <span class="method-name">verifyGroceryOnHomePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHomePageTitleTest">
-                  </a> <!-- verifyHomePageTitleTest -->
-                  <span class="method-name">verifyHomePageTitleTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.GheeOilsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="discountSortTest">
-                  </a> <!-- discountSortTest -->
-                  <span class="method-name">discountSortTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="highToLowSortTest">
-                  </a> <!-- highToLowSortTest -->
-                  <span class="method-name">highToLowSortTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="lowToHighSortTest">
-                  </a> <!-- lowToHighSortTest -->
-                  <span class="method-name">lowToHighSortTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="mouseOverTest">
-                  </a> <!-- mouseOverTest -->
-                  <span class="method-name">mouseOverTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="popularitySortTest">
-                  </a> <!-- popularitySortTest -->
-                  <span class="method-name">popularitySortTest</span>
+                  <a name="filterBrandTest">
+                  </a> <!-- filterBrandTest -->
+                  <span class="method-name">filterBrandTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -414,28 +488,21 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ullas\Documents\AutomationPOC\groceries\testng.xml</span>
+            <span class="header-content">C:\Flipkart-Groceries\Flipkart-Grocery\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;Test&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.AHomePageTest&quot;/&gt;
+      &lt;class name=&quot;testcases.GroceryHomePageTest&quot;/&gt;
+      &lt;class name=&quot;testcases.DalPulsesTest&quot;/&gt;
+      &lt;class name=&quot;testcases.GheeOilsTest&quot;/&gt;
+      &lt;class name=&quot;testcases.AttaTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-  &lt;test name=&quot;Test1&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testcases.DalPulsesTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test1 --&gt;
-  &lt;test name=&quot;Test2&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testcases.GheeOilsTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -447,13 +514,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test1 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test2 (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -479,91 +540,111 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(21);
+data.addRows(26);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'removeProductTest')
 data.setCell(0, 2, 'testcases.DalPulsesTest')
-data.setCell(0, 3, 30389);
+data.setCell(0, 3, 40897);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'submitLocation')
-data.setCell(1, 2, 'testcases.AHomePageTest')
-data.setCell(1, 3, 25089);
+data.setCell(1, 1, 'addQuantity1Test')
+data.setCell(1, 2, 'testcases.DalPulsesTest')
+data.setCell(1, 3, 20251);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addQuantity1Test')
-data.setCell(2, 2, 'testcases.DalPulsesTest')
-data.setCell(2, 3, 20173);
+data.setCell(2, 1, 'discountSortTest')
+data.setCell(2, 2, 'testcases.GheeOilsTest')
+data.setCell(2, 3, 15455);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'placeOrderTest')
-data.setCell(3, 2, 'testcases.DalPulsesTest')
-data.setCell(3, 3, 16582);
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'testcases.GroceryHomePageTest')
+data.setCell(3, 3, 14494);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'clickableProductTest')
+data.setCell(4, 1, 'placeOrderTest')
 data.setCell(4, 2, 'testcases.DalPulsesTest')
-data.setCell(4, 3, 10297);
+data.setCell(4, 3, 14067);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'addQuantityTest')
-data.setCell(5, 2, 'testcases.DalPulsesTest')
-data.setCell(5, 3, 10242);
+data.setCell(5, 1, 'lowToHighSortTest')
+data.setCell(5, 2, 'testcases.GheeOilsTest')
+data.setCell(5, 3, 10898);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'lowToHighSortTest')
-data.setCell(6, 2, 'testcases.GheeOilsTest')
-data.setCell(6, 3, 10190);
+data.setCell(6, 1, 'filterBrandTest')
+data.setCell(6, 2, 'testcases.AttaTest')
+data.setCell(6, 3, 10731);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'popularitySortTest')
+data.setCell(7, 1, 'highToLowSortTest')
 data.setCell(7, 2, 'testcases.GheeOilsTest')
-data.setCell(7, 3, 10170);
+data.setCell(7, 3, 10550);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'searchBarElementsTest')
+data.setCell(8, 1, 'addQuantityTest')
 data.setCell(8, 2, 'testcases.DalPulsesTest')
-data.setCell(8, 3, 10166);
+data.setCell(8, 3, 10251);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'discountSortTest')
-data.setCell(9, 2, 'testcases.GheeOilsTest')
-data.setCell(9, 3, 10153);
+data.setCell(9, 1, 'closeTest')
+data.setCell(9, 2, 'testcases.GroceryHomePageTest')
+data.setCell(9, 3, 7598);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'highToLowSortTest')
+data.setCell(10, 1, 'popularitySortTest')
 data.setCell(10, 2, 'testcases.GheeOilsTest')
-data.setCell(10, 3, 10153);
+data.setCell(10, 3, 5523);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'enterLocationPinCode')
-data.setCell(11, 2, 'testcases.AHomePageTest')
-data.setCell(11, 3, 7181);
+data.setCell(11, 1, 'clickOnGroceryTest')
+data.setCell(11, 2, 'testcases.GroceryHomePageTest')
+data.setCell(11, 3, 3282);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'navigateToPDPTest')
-data.setCell(12, 2, 'testcases.DalPulsesTest')
-data.setCell(12, 3, 3898);
+data.setCell(12, 1, 'backToGroceryTest')
+data.setCell(12, 2, 'testcases.AttaTest')
+data.setCell(12, 3, 2709);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'mouseOverTest')
-data.setCell(13, 2, 'testcases.GheeOilsTest')
-data.setCell(13, 3, 648);
+data.setCell(13, 1, 'navigateToPDPTest')
+data.setCell(13, 2, 'testcases.DalPulsesTest')
+data.setCell(13, 3, 2494);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'addItemTest')
+data.setCell(14, 1, 'clickableProductTest')
 data.setCell(14, 2, 'testcases.DalPulsesTest')
-data.setCell(14, 3, 310);
+data.setCell(14, 3, 1228);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'clickOnGroceryTest')
-data.setCell(15, 2, 'testcases.AHomePageTest')
-data.setCell(15, 3, 153);
+data.setCell(15, 1, 'availabilityTest')
+data.setCell(15, 2, 'testcases.AttaTest')
+data.setCell(15, 3, 1001);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'cart')
-data.setCell(16, 2, 'testcases.DalPulsesTest')
-data.setCell(16, 3, 125);
+data.setCell(16, 1, 'mouseOverTest')
+data.setCell(16, 2, 'testcases.GheeOilsTest')
+data.setCell(16, 3, 636);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'clickOnSearchIconTest')
-data.setCell(17, 2, 'testcases.DalPulsesTest')
-data.setCell(17, 3, 110);
+data.setCell(17, 1, 'submitLocation')
+data.setCell(17, 2, 'testcases.GroceryHomePageTest')
+data.setCell(17, 3, 438);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyGroceryOnHomePage')
-data.setCell(18, 2, 'testcases.AHomePageTest')
-data.setCell(18, 3, 94);
+data.setCell(18, 1, 'addItemTest')
+data.setCell(18, 2, 'testcases.DalPulsesTest')
+data.setCell(18, 3, 252);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'verifyHomePageTitleTest')
-data.setCell(19, 2, 'testcases.AHomePageTest')
-data.setCell(19, 3, 31);
+data.setCell(19, 1, 'cart')
+data.setCell(19, 2, 'testcases.DalPulsesTest')
+data.setCell(19, 3, 192);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'verifySearchElementPageTest')
+data.setCell(20, 1, 'searchBarElementsTest')
 data.setCell(20, 2, 'testcases.DalPulsesTest')
-data.setCell(20, 3, 19);
+data.setCell(20, 3, 182);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'enterLocationPinCode')
+data.setCell(21, 2, 'testcases.GroceryHomePageTest')
+data.setCell(21, 3, 152);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'clickOnSearchIconTest')
+data.setCell(22, 2, 'testcases.DalPulsesTest')
+data.setCell(22, 3, 116);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyGroceryOnHomePage')
+data.setCell(23, 2, 'testcases.GroceryHomePageTest')
+data.setCell(23, 3, 114);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyHomePageTitleTest')
+data.setCell(24, 2, 'testcases.GroceryHomePageTest')
+data.setCell(24, 3, 48);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifySearchElementPageTest')
+data.setCell(25, 2, 'testcases.DalPulsesTest')
+data.setCell(25, 3, 17);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -594,114 +675,144 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.AHomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.GroceryHomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitleTest</span>
-                <span class="method-start">14203 ms</span>
+                <span class="method-start">10788 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyGroceryOnHomePage</span>
-                <span class="method-start">14234 ms</span>
+                <span class="method-start">10846 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnGroceryTest</span>
-                <span class="method-start">14328 ms</span>
+                <span class="method-start">10965 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterLocationPinCode</span>
-                <span class="method-start">14485 ms</span>
+                <span class="method-start">14250 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">submitLocation</span>
-                <span class="method-start">21669 ms</span>
+                <span class="method-start">14406 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">14847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeTest</span>
+                <span class="method-start">29345 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.DalPulsesTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">47033 ms</span>
+                <span class="method-start">36949 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">searchBarElementsTest</span>
-                <span class="method-start">47066 ms</span>
+                <span class="method-start">36960 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnSearchIconTest</span>
-                <span class="method-start">57235 ms</span>
+                <span class="method-start">37147 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifySearchElementPageTest</span>
-                <span class="method-start">57352 ms</span>
+                <span class="method-start">37266 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickableProductTest</span>
-                <span class="method-start">57427 ms</span>
+                <span class="method-start">37289 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">navigateToPDPTest</span>
-                <span class="method-start">67727 ms</span>
+                <span class="method-start">38521 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addItemTest</span>
-                <span class="method-start">71629 ms</span>
+                <span class="method-start">41021 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addQuantityTest</span>
-                <span class="method-start">71941 ms</span>
+                <span class="method-start">41277 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">cart</span>
-                <span class="method-start">82184 ms</span>
+                <span class="method-start">51532 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addQuantity1Test</span>
-                <span class="method-start">82313 ms</span>
+                <span class="method-start">51727 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">placeOrderTest</span>
-                <span class="method-start">102488 ms</span>
+                <span class="method-start">71982 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">removeProductTest</span>
-                <span class="method-start">119071 ms</span>
+                <span class="method-start">86054 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.GheeOilsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">149484 ms</span>
+                <span class="method-start">126954 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">mouseOverTest</span>
-                <span class="method-start">149533 ms</span>
+                <span class="method-start">126972 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">popularitySortTest</span>
-                <span class="method-start">150183 ms</span>
+                <span class="method-start">127612 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">lowToHighSortTest</span>
-                <span class="method-start">160354 ms</span>
+                <span class="method-start">133139 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">highToLowSortTest</span>
-                <span class="method-start">170545 ms</span>
+                <span class="method-start">144040 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">discountSortTest</span>
-                <span class="method-start">180700 ms</span>
+                <span class="method-start">154592 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AttaTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">170049 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">filterBrandTest</span>
+                <span class="method-start">170068 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">availabilityTest</span>
+                <span class="method-start">180802 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">backToGroceryTest</span>
+                <span class="method-start">181806 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

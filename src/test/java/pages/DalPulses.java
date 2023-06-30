@@ -28,7 +28,7 @@ public class DalPulses extends BaseClass {
 	@FindBy(xpath = "//div[contains(text(),'oil')]")
 	WebElement suggestedElement;
 
-	@FindBy(xpath = "//div[@class='_1MbXnE'][normalize-space()='safe harvest Toor/Arhar Dal (Pesticide Free)']")
+	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[1]/div/div/div[2]/div[2]/a")
 	WebElement product;
 
 	@FindBy(xpath = "//button[@class='_2KpZ6l _2U9uOA _3v1-ww _27Cjkl']")
@@ -45,6 +45,18 @@ public class DalPulses extends BaseClass {
 
 	@FindBy(xpath = "//span[normalize-space()='Place Order']")
 	WebElement placeOrder;
+	
+	@FindBy(xpath = "//input[@class='_2IX_2- _17N0em']")
+	WebElement email;
+	
+	@FindBy(xpath = "//input[@class='_2IX_2- _3mctLh _17N0em']")
+	WebElement otp;
+	
+	@FindBy(xpath = "//button[@class='_2KpZ6l _20xBvF _3AWRsL']")
+	WebElement loginPrompt;
+	
+	@FindBy(xpath = "//span[text() = 'Login']")
+	WebElement loginButton;
 
 	@FindBy(xpath = "//div[@class='_2WOk5C']//div[1]//button[1]")
 	WebElement removeProduct;
@@ -101,6 +113,22 @@ public class DalPulses extends BaseClass {
 
 	public void productPlaceOrder() {
 		placeOrder.click();
+	}
+	
+	public void emailLogin() {
+		email.sendKeys("8861137077");
+	}
+	
+	public void otp() {
+		
+	}
+	
+	public void loginPrompt() {
+		loginPrompt.click();
+	}
+	
+	public void loginSubmit() {
+		loginButton.click();
 	}
 
 	public void removeProduct() {
