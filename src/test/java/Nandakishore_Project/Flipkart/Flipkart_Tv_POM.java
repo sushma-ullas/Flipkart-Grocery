@@ -67,20 +67,24 @@ public class Flipkart_Tv_POM {
         PageFactory.initElements (driver, this);
     }
     public void ValidateAppliancesCategory() {
-        Actions actions = new Actions (driver);
-        WebElement menuOption =Appliances;
-        menuOption.click ();
+        Actions actions = new Actions(driver);
+        WebElement AppliancesCategory = Appliances;
+        actions.moveToElement(AppliancesCategory).perform();
+        AppliancesCategory.click();
     }
     public void ValidateFour_k_Tv() {
         Actions actions = new Actions (driver);
-        WebElement menuOption = Four_K_Tv;
-        menuOption.click ();
+        WebElement TvFour = Four_K_Tv;
+        actions.moveToElement(TvFour).perform();
+        TvFour.click ();
+
     }
 
     public void ValidateMi_55k_SmartTV() {
         Actions actions = new Actions (driver);
-        WebElement menuOption = Mi_55k_SmartTV;
-        menuOption.click ();
+        WebElement MiTv = Mi_55k_SmartTV;
+        actions.moveToElement(MiTv).perform();
+        MiTv.click ();
     }
 
     public void Validate_All_ProductTailImages() throws InterruptedException {
@@ -97,31 +101,39 @@ public class Flipkart_Tv_POM {
     }
 
     public void ValidateValidPinCode() {
-        Actions actions = new Actions (driver);
-        PinCode.click ();
-        EnterPinCode.sendKeys ("500073");
 
+        Actions actions = new Actions(driver);
+        WebElement EnterPinCode = PinCode;
+        WebElement Click_CheckButton = EnterPinCode;
+        actions.moveToElement(EnterPinCode).perform();
+        EnterPinCode.sendKeys("500073");
+        Click_CheckButton.click();
     }
     public void ValidateAddToCart() {
-        Actions actions = new Actions (driver);
-        WebElement menuOption = AddToCart;
-        menuOption.click ();
+        Actions actions = new Actions(driver);
+        WebElement AddProduct = AddToCart;
+        actions.moveToElement(AddProduct).perform();
+        AddProduct.click();
+
     }
     public void ValidateAddingMoreProduct() {
         Actions actions = new Actions (driver);
         WebElement menuOption = AddTwoMoreQuantity;
+        actions.moveToElement(menuOption).perform();
         menuOption.click ();
-        menuOption.click ();
+
     }
     public void ValidateRemoveQuantity() {
         Actions actions = new Actions (driver);
         WebElement menuOption = RemoveAddedQuantity;
+        actions.moveToElement(menuOption).perform();
         menuOption.click ();
-        menuOption.click ();
+
     }
     public void ValidatePlaceToOrder() {
         Actions actions = new Actions (driver);
         WebElement menuOption =PlaceToOrder;
+        actions.moveToElement(menuOption).perform();
         menuOption.click ();
     }
 }

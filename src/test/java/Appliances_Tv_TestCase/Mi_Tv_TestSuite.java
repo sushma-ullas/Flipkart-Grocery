@@ -3,9 +3,7 @@ package Appliances_Tv_TestCase;
 import Nandakishore_Project.Flipkart.Flipkart_BaseClass;
 import Nandakishore_Project.Flipkart.Flipkart_Tv_POM;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
@@ -16,9 +14,9 @@ public class Mi_Tv_TestSuite {
     Flipkart_BaseClass bs;
     int i = 0;
 
-    @BeforeMethod
+    @BeforeTest
     public void Verify_FlipkartLandingPage() throws Exception {
-        openBrowser("chrome", "https://www.flipkart.com/");
+        openBrowser("chrome", "https://www.flipkart.com/?=iqoo");
         takeScreenshot("FlipKart Launch");
         Tv = new Flipkart_Tv_POM(driver);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -29,70 +27,48 @@ public class Mi_Tv_TestSuite {
 
     }
 
-    @Test
+    @Test(priority = 0)
     public void Verify_Appliances_Category() throws Exception {
      Tv.ValidateAppliancesCategory();
      takeScreenshot("AppliancesCategory");
 
     }
-    @Test
+    @Test(priority = 1)
     public void Verify_Four_k_Tv_Category() throws Exception {
-        Tv.ValidateAppliancesCategory();
         Tv.ValidateFour_k_Tv();
         takeScreenshot("Four_k_Tv_Category");
     }
-    @Test
+    @Test(priority = 2)
     public void Verify_55k_SmartTv() throws Exception {
-        Tv.ValidateAppliancesCategory();
-        Tv.ValidateFour_k_Tv();
+
         Tv.ValidateMi_55k_SmartTV();
         takeScreenshot("55k_SmartTv");
     }
-    @Test
+    @Test(priority = 3)
     public void Verify_ProductTailImages() throws Exception {
-        Tv.ValidateAppliancesCategory();
-        Tv.ValidateFour_k_Tv();
-        Tv.ValidateMi_55k_SmartTV();
         Tv.Validate_All_ProductTailImages();
         takeScreenshot("ProductTailImages");
     }
-    @Test
+    @Test(priority = 4)
     public void Verify_ValidPinCode() throws Exception {
-        Tv.ValidateAppliancesCategory();
-        Tv.ValidateFour_k_Tv();
-        Tv.ValidateMi_55k_SmartTV();
-        Tv.Validate_All_ProductTailImages();
         Tv.ValidateValidPinCode();
         takeScreenshot("ValidPinCode");
     }
 
-    @Test
+    @Test(priority = 5)
     public void Verify_AddingMoreProduct() throws Exception {
-        Tv.ValidateAppliancesCategory();
-        Tv.ValidateFour_k_Tv();
-        Tv.ValidateMi_55k_SmartTV();
-        Tv.Validate_All_ProductTailImages();
-        Tv.ValidateValidPinCode();
         Tv.ValidateAddToCart();
         Tv.ValidateAddingMoreProduct();
         takeScreenshot("AddingMoreProduct");
 
-
-
     }
-    @Test
+    @Test(priority = 6)
     public void Verify_PlaceToOrder() throws Exception {
-        Tv.ValidateAppliancesCategory();
-        Tv.ValidateFour_k_Tv();
-        Tv.ValidateMi_55k_SmartTV();
-        Tv.Validate_All_ProductTailImages();
-        Tv.ValidateValidPinCode();
-        Tv.ValidateAddToCart();
-        Tv.ValidateAddingMoreProduct();
         Tv.ValidatePlaceToOrder();
         takeScreenshot("PlaceToOrder");
     }
-        @AfterMethod
+        @AfterTest
+
         public void testEnd (ITestResult result) throws Exception {
         i = i + 1;
         String screenshotName = "Login fail";

@@ -1,13 +1,7 @@
 package library;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Properties;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.log4j.LogManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -15,16 +9,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import org.openqa.selenium.interactions.Actions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Properties;
+import java.util.logging.Logger;
 
-//Launch Browser and open flipkart website
 public class BaseClass {
 	public static WebDriver driver;
 	public static Properties prop;
-	public static Logger logger = LogManager.getLogger(BaseClass.class.getName());
+	//public static Logger logger = LogManager.getLogger(BaseClass.class.getName());
 
 	public static WebDriver initializationDriver() {
 		try {
